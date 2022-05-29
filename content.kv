@@ -1,0 +1,82 @@
+<Content@GridLayout>:
+    rows:10
+    cols:1
+    padding:10
+    spacing:10
+
+    MDLabel:
+        text:"Add questions to the app"
+
+    GridLayout:
+        cols:2
+        rows:1
+        MDLabel:
+            text:"ID"
+        TextInput:
+            multiline:False
+            
+    
+    GridLayout:
+        cols:2
+        rows:1
+        MDLabel:
+            text:"Question"
+        TextInput:
+            
+            
+    
+    GridLayout:
+        cols:2
+        rows:1
+        MDLabel:
+            text:"Option1"
+        TextInput:
+            
+    
+    GridLayout:
+        cols:2
+        rows:1
+        MDLabel:
+            text:"Option2"
+        TextInput:
+            
+    
+    GridLayout:
+        cols:2
+        rows:1
+        MDLabel:
+            text:"Option3"
+        TextInput:
+            
+    
+    GridLayout:
+        cols:2
+        rows:1
+        MDLabel:
+            text:"Option4"
+        TextInput:
+            
+
+    GridLayout:
+        cols:2
+        rows:1
+        MDLabel:
+            text:"Answer"
+        TextInput:
+            
+    
+    GridLayout:
+        cols:2
+        rows:1
+        MDLabel:
+            text:"Category"
+        TextInput:
+            multiline:False
+            
+    
+    GridLayout:
+        cols:2
+        orientation: 'rl-tb'
+        MDRectangleFlatButton:
+            text:"Add Question"
+            on_release:app.add_question(question,opt1,opt2,opt3,opt4,answer)
